@@ -148,18 +148,18 @@
     <section id="abstract">
       <p>
         This document provides an architectural overview of the Originator
-        Profile Framework (OPF), a framework designed to establish rich
+        Profile Framework (OPF), a framework designed to provide rich
         information about the origin of the information (Originator Profile
         &mdash; OP), with content provenance originating from the origin in
-        digital media and advertising ecosystems. It introduces the key
-        concepts, data models, operational processes, and governance model
+        digital media and advertising ecosystems. This document introduces the
+        key concepts, data models, operational processes, and governance model
         that enable verifiable profiles for content originators, supported by
         third-party-validated originator attributes as part of Originator
         Profile. The overview also includes comparisons to other similar
-        projects, and current use cases and distilled requirements. This
-        document is primarily intended for technical audiences and technically
-        knowledgeable end-users to understand the design and underlying design
-        choices of the Originator Profile Framework.
+        projects, current use cases, and distilled requirements. This document
+        is primarily intended for technical audiences and technically
+        knowledgeable end-users to understand the design of the Originator
+        Profile Framework.
       </p>
     </section>
 
@@ -185,36 +185,37 @@
         display fraudulent advertisements on their websites, causing damage to
         their reputation through association with these ads. On the contrary,
         advertisers unknowingly display their advertisements on fraudulent
-        websites, which causes brand reputation damage through fraudulent site
-        association. Thus, the situation is causing not only harm to the
-        readers but also affecting all of the stakeholders.
+        websites, which causes damage to their brand reputation through
+        association with fraudulent sites. Thus, the situation is causing not
+        only harm to the readers but also affecting all of the stakeholders.
       </p>
 
       <p>
         Then, what do the well-behaved stakeholders in the ecosystem expect?
         From the reader's perspective, the media that provides information is
-        the one &mdash; or one of the kinds &mdash; the reader is expecting, and the
-        information provided by the media is expected to be reasonably
-        reliable. At the very least, the media must deliver information to the
-        readers accurately, as intended. The user must be able to verify the
-        origin of the information and also understand the origin's nature. Of
-        course, there are differing viewpoints on the accuracy of the
-        information's delivery; still, it should be delivered in a manner
-        intended by the media &mdash; accurate delivery of the information. From
-        the media's perspective, they will expect that information is
-        delivered accurately to readers. They will also expect that
-        appropriate advertisements are displayed on their websites.
-        Advertisers will expect that their advertisements are displayed on
-        appropriate media.
+        the kind of information the reader is expecting, and the information
+        provided by the media is expected to be reasonably reliable. At the
+        very least, the media must deliver information to the readers
+        accurately, as intended. The user must be able to verify the origin of
+        the information and also understand the origin's nature. Of course,
+        there are differing viewpoints on the accuracy of the information's
+        delivery; still, it should be delivered in a manner intended by the
+        media &mdash; accurately and in a timely manner. From the media's
+        perspective, they will expect that information is delivered accurately
+        to readers. They will also expect that appropriate advertisements are
+        displayed on their websites. Advertisers will expect that their
+        advertisements are displayed on appropriate media.
       </p>
       <p>
         Originator Profile Framework is a set of technology and operational
         guidelines primarily designed for web media and digital advertisement
-        use cases to answer these expectations. In technical terms, Originator
-        Profile provides content provenance with verifiable profile
-        information &mdash; Originator Profile. The profile information is
-        validated and provided by multiple third parties, composed into an
-        Originator Profile.
+        use cases to answer these expectations. In technical terms, the
+        Originator Profile Framework provides content provenance, alongside
+        verifiable profile information that is the origin of the content, the
+        Originator Profile. The profile information is validated and provided
+        by multiple third parties, composed into an Originator Profile. (Note
+        that operational guidelines are still being developed and will be
+        provided in the future.)
       </p>
       <p>
         The document you are reading is one of the documents in the Originator
@@ -223,11 +224,11 @@
       </p>
       <ul>
         <li>
-            <b>Originator Profile Framework &mdash; Architecture Overview</b> (this
-            document) provides an introductory overview of the Originator
-            Profile Framework, including a discussion of what the framework
-            tries to address, high-level concepts and principles of the
-            design, the framework in multiple levels of abstraction, also
+            <b>Originator Profile Framework &mdash; Architecture Overview</b>
+            (this document) provides an introductory overview of the
+            Originator Profile Framework, including a discussion of what the
+            framework aims to address, high-level concepts of the framework,
+            and the framework at multiple levels of abstraction. It also
             includes a brief description of the use cases and requirements.
         </li>
         <li>
@@ -236,54 +237,53 @@
             Originator Profile, not only the technology side, but also
             including governance and operations. OPBs are available on the OP
             blueprints website[[OPB]]. These documents will be ultimately
-            combined into the following three documents. Currently, most of
-            the OPBs are focusing on the technical implementation &mdash; how
-            to implement. We describe the reason behind the design in this
-            document.
+            combined into the following four documents. Currently, most of the
+            OPBs are focusing on the technical implementation &mdash;
+            specifically, how to implement. We describe the reason behind the
+            design in this document.
         </li>
       </ul>
 
       <p>
-        The following four documents will be compiled in the coming days
-        based on the above two documents &mdash; some parts of this document may be
-        moved into these three documents, too:
+        The following four documents will be compiled in the future based on
+        the above two documents &mdash; some parts of this document may be
+        moved into these four documents, too:
       </p>
       
       <ul>
         <li>
-            <b>Originator Profile Framework &mdash; Architecture Overview</b>
+          <b>Originator Profile Framework &mdash; Architecture Overview</b>
             will be part of the documentation for the Originator Profile
             Framework, providing a high-level view of its components and
             interactions.
         </li>
         <li>
-            <b>Originator Profile Framework &mdash; Core Specification</b>
+          <b>Originator Profile Framework &mdash; Core Specification</b>
             describes the shared part of the Originator Profile Framework,
             apart from specifics to the use cases.
         </li>
         <li>
-            <b>Originator Profile Framework &mdash; Design and Implementation for Media</b>
-            describes the data model, the processes, the high-level governance
-            model, and the specification for the Media use case.
+          <b>Originator Profile Framework &mdash; Design and Implementation
+              for Web Media</b>
+            describes the data model, processes, high-level governance model,
+            and specification for the Web Media use case.
         </li>
         <li>
-            <b>Originator Profile Framework &mdash; Design and Implementation
-            for Advertisement</b>
-            describes the data model, the processes, the high-level governance
-            model, and the specification for the Advertisement use case.
+          <b>Originator Profile Framework &mdash; Design and Implementation
+              for Web Advertisement</b>
+            describes the data model, processes, high-level governance model,
+            and specification for the Web Advertisement use case.
         </li>
       </ul>
 
       <p class="note">
         The Originator Profile Blueprints are currently living documents
-        matching with the corresponding implementations. Since the OPBs are
-        living documents, this document refers to OPBs for implementation
-        details and relies on their descriptions. In such cases, we provide
-        references to the corresponding OPBs as necessary.
-        
-        The Originator Profile Blueprints may remain after the publication of
-        the above documents, to host the future improvement proposals and
-        discussions.
+        matching the corresponding implementations. Since the OPBs are living
+        documents, this document refers to OPBs for implementation details and
+        relies on their descriptions. In such cases, we provide references to
+        the corresponding OPBs as necessary. The Originator Profile Blueprints
+        may remain after the publication of the above documents to host the
+        future improvement proposals and discussions.
       </p>
 
       <p>
@@ -298,8 +298,7 @@
 
         <li>
             Section <a href="#architecture"></a> provides an overview of the
-            architectural components and their interactions, also introduces
-            design principles.
+            architectural components and their interactions.
         </li>
 
         <li>
@@ -309,9 +308,9 @@
 
         <li>
             Section <a href="#jurisdiction-specific-model"></a> describes
-            models which designed specifically capture the unique requirements
-            and characteristics of a particular jurisdiction, including but
-            not limited to countries and regions.
+            models designed to capture the unique requirements and
+            characteristics of a particular jurisdiction, including but not
+            limited to countries and regions.
         </li>
 
         <li>
@@ -343,8 +342,9 @@
       </ul>
 
       <p>
-        This document is intended for a technical audience, including
-        developers, architects, and decision-makers.
+        This document is primarily intended for technical audiences and
+        technically knowledgeable end-users to understand the design of the
+        Originator Profile Framework.
       </p>
 
     </section>
@@ -352,13 +352,14 @@
     <section id="terminology">
       <h1>Terminology</h1>
       <p>
-        In this section, we describe several key terms and concepts which OP
-        depends, and also the terms used in the context of OP.
+        In this section, we describe several key terms and concepts on which
+        [=Originator Profile Framework=] relies, as well as the terms used in the
+        context of [=Originator Profile Framework=].
       </p>
       <p>
-        While some of terms and concepts are defined in various standards or
-        literatures, they are often differently described. To show our
-        intentions clearly, we describe these terms and concepts here.
+        While some of the terms and concepts are defined in various standards
+        or literature, they are often described differently. To clarify our
+        intentions, we describe these terms and concepts here.
       </p>
       <p>Terms appear in alphabetical order.</p>
 
@@ -383,7 +384,7 @@
           <dd>
             A [=Content Aggregator=] is a type of website that receives
             [=Content=] from one or more [=Originators=], then aggregates the
-            [=Content=] and provides the aggregated [=Contents=] to
+            [=Content=] and provides the aggregated [=Content=] to
             [=Recipients=].
           </dd>
         </dt>
@@ -391,11 +392,12 @@
         <dt>
           <dfn>Content Attestation</dfn>
           <dd>
-            A [=Content Attestation=] is a type of [=Signed Data with Policy=]
-            that confirms the [=Content=] originated from the corresponding
-            [=Originator=]. A [=Content Attestation=] can be [=Verified=] by
-            using the [=Verification Key=] contained in the [=Core Profile=],
-            which is part of the [=Originator Profile=].
+            A [=Content Attestation=] is a type of [=Signed Data from
+            Originator=] that confirms the [=Content=] originated from the
+            corresponding [=Originator=]. A [=Content Attestation=] can be
+            [=Verified=] by using the [=Verification Key=] contained in the
+            [=Core Profile=], which is part of the [=Originator=]'s
+            [=Originator Profile=].
           </dd>
         </dt>
 
@@ -413,20 +415,22 @@
         <dt>
           <dfn>Core Profile</dfn>
           <dd>
-            A [=Core Profile=] is a set of essential [=Attributes=] about the
-            [=Originator=] that create various forms of [=Signed Data=] in the
-            ecosystem based on [=Originator Profile Framework=]. [=Core
-            Profile=] includes [=Verification Key=] to be used to [=Verify=]
-            the [=Signed Data=].
+            A [=Core Profile=] is a set of essential [=Validated Attributes=]
+            about the [=Originator=] that create various forms of [=Signed
+            Data from Originator=] in the ecosystem based on [=Originator
+            Profile Framework=]. A [=Core Profile=] includes [=Verification
+            Key=] for [=Verify=]ing a [=Signed Data=].
 
-            [=Core Profile=] is part of the [=Originator Profile=].
+            A [=Core Profile=] is part of an [=Originator Profile=].
           </dd>
         </dt>
 
         <dt>
           <dfn>Core Profile Issuer</dfn>
           <dd>
-            A [=Core Profile Issuer=] is an [=Entity=] that issues a [=Core Profile=].
+            A [=Core Profile Issuer=] is an [=Entity=] that issues a [=Core
+            Profile=] under the [=Core Profile Policy=] for the [=Core Profile
+            Issuer=].
           </dd>
         </dt>
 
@@ -448,10 +452,10 @@
         <dt>
           <dfn>Jurisdiction Specific Model</dfn>
           <dd>
-            [=Jurisdiction Specific Model=] is set of concrete data models
+            [=Jurisdiction Specific Model=] is a set of concrete data models
             that represent the specific requirements and characteristics of a
-            particular jurisdiction, including but not limited to region, or
-            country.
+            particular jurisdiction, including but not limited to the region
+            or country.
           </dd>
         </dt>
 
@@ -459,8 +463,8 @@
           <dfn>Organization Profile</dfn>
           <dd>
             An [=Organization Profile=] is a set of [=Validated Attributes=]
-            about the [=Originator=]'s organizational context, such as, name,
-            address, registration information potentially localized to each of
+            about the [=Originator=]'s organizational context, such as name,
+            address, registration information, potentially localized to each of
             the jurisdictions.
           </dd>
         </dt>
@@ -468,19 +472,23 @@
         <dt>
           <dfn>Originator</dfn>
           <dd>
-            An [=Originator=] is an [=Entity=] that originates [=Content=].
+            An [=Originator=] is an [=Entity=] that sends some [=Content=] to
+            [=Recipients=]. Also, in the [=Originator Profile Framework=], an
+            [=Originator=] is an [=Entity=] that creates various forms of
+            [=Signed Data from Originator=], such as [=Content Attestation=].
           </dd>
         </dt>
 
         <dt>
           <dfn>Originator Profile</dfn>
           <dd>
-            An [=Originator Profile=] is a set of [=Attributes=] about the
-            [=Originator=] that create various forms of [=Signed Data=] in the
-            ecosystem based on [=Originator Profile Framework=].
-            [=Originator Profile=] includes details such as the
-            [=Originator=]'s [=Verification Key=] used to verify the signature
-            of [=Signed Data=], such as [=Content Attestation=].
+            An [=Originator Profile=] is a set of [=Validated Attributes=]
+            about the [=Originator=] that create various forms of [=Signed
+            Data from Originator=] in the ecosystem based on [=Originator
+            Profile Framework=]. [=Originator Profile=] includes details such
+            as the [=Originator=]'s [=Verification Key=] used to verify the
+            signature of [=Signed Data from Originator=], such as [=Content
+            Attestation=].
 
             [=Originator Profile=] consists of one [=Core Profile=] and one or
             more [=Profile Annotations=]; the [=Core Profile=] contains the
@@ -494,7 +502,7 @@
           <dfn>Originator Profile Framework</dfn>
           <dd>
             [=Originator Profile Framework=] is a set of technological designs
-            and governance models that implements [=Originator Profile=] and
+            and governance models that implement [=Originator Profile=] and
             related models, including data models and related policies.
           </dd>
         </dt>
@@ -502,12 +510,15 @@
         <dt>
           <dfn>Originator Profile Issuer</dfn>
           <dd>
-            A [=Originator Profile Issuer=] is an [=Entity=] that issues part
-            of an [=Originator Profile=], including [=Core Profile=] and
-            [=Profile Annotation=]; [=Core Profile Issuer=] and [=Profile
-            Annotation Issuer=]. These [=Entities=] are also [=Originators=],
-            thus they publish their own [=Originator Profile=] while privately
-            controlling the corresponding [=Signing Key=].
+            An [=Originator Profile Issuer=] is an [=Entity=] that issues part
+            of an [=Originator Profile=]. These issuers include [=Core
+            Profile Issuer=] and some variant of [=Profile Annotation
+            Issuer=], both of which are responsible for issuing their
+            respective components of the [=Originator Profile=], such as
+            [=Core Profile=] or some variant of [=Profile Annotation=]. These
+            [=Entities=] are also [=Originators=], thus they publish their own
+            [=Originator Profile=] while privately controlling the
+            corresponding [=Signing Key=].
           </dd>
         </dt>
 
@@ -515,21 +526,20 @@
           <dfn>Profile Annotation</dfn>
           <dd>
             A [=Profile Annotation=] is a set of [=Validated Attributes=] in
-            the form of [=Signed Data=] that adds [=Validated Attributes=] to
+            the form of [=Signed Data=] that binds [=Validated Attributes=] to
             [=Core Profile=]. [=Profile Annotation Issuer=] issues [=Profile
-            Annotation=].
-
-            [=Profile Annotation=] is part of the [=Originator Profile=];
-            effectively, it adds [=Validated Attributes=] to the [=Originator
-            Profile=].
+            Annotation=] with respect to a specific [=Profile Annotation
+            Policy=]. [=Profile Annotation=] is tailored to specific purposes,
+            such as [=Web Media Profile=] or a kind of [=Originator Profile=]
+            for the specific jurisdiction.
           </dd>
         </dt>
 
         <dt>
           <dfn>Profile Annotation Issuer</dfn>
           <dd>
-            A [=Profile Annotation Issuer=] is an [=Entity=] that issues [=Profile
-            Annotations=].
+            A [=Profile Annotation Issuer=] is an [=Entity=] that issues a
+            kind of [=Profile Annotations=].
           </dd>
         </dt>
 
@@ -551,13 +561,15 @@
         <dt>
           <dfn>Signed Data</dfn>
           <dd>
-            A [=Signed Data=] consists of three elements &mdash; [=Verification
-            Key=] or reference to it, payload, and signature &mdash; and provides a
-            way to verify that the signature is created on the payload, with
-            the [=Signing Key=] that is bound to the [=Verification Key=],
-            Thus the integrity of the payload is ensured, and use the
-            [=Verification Key=] to identify the [=Entity=] which signed the data.
-            Please refer to <a href="#model-of-digital-certificates"></a> for the detailed discussion.
+            A [=Signed Data=] consists of three elements &mdash;
+            [=Verification Key=] or reference to it, payload, and signature
+            &mdash; and provides a way to verify that the signature is created
+            on the payload, with the [=Signing Key=] that is bound to the
+            [=Verification Key=], Thus the integrity of the payload is
+            ensured, and use the [=Verification Key=] to identify the
+            [=Entity=] which signed the data. Please refer to <a
+            href="#model-of-digital-certificates"></a> for a detailed
+            discussion.
           </dd>
         </dt>
 
@@ -566,17 +578,20 @@
           <dd>
             [=Signed Data from Originator=] is an essential [=Signed Data=]
             within [=Originator Profile Framework=]. It is an abstract data
-            model based on [=Signed Data with Policy=] originated from an
-            [=Originator=], assuming that it is signed with specific intent
-            corresponding to the policy stated by the [=Originator=].
+            model based on [=Signed Data with Policy=], originated from an
+            [=Originator=], assuming that it is signed with a specific intent
+            corresponding to the policy stated by the [=Originator=]. Please
+            refer to <a href="#architecture"></a> for a detailed discussion.
           </dd>
         </dt>
 
         <dt>
           <dfn>Signed Data with Policy</dfn>
           <dd>
-            [=Signed Data with Policy=] is an abstract data model that represents the
-            signed data structure that is created under a specific policy.
+            [=Signed Data with Policy=] is an abstract data model that
+            represents the signed data structure that is created under a
+            specific policy. Please refer to <a href="#architecture"></a>
+            for a detailed discussion.
           </dd>
         </dt>
 
@@ -617,7 +632,7 @@
         <dt>
           <dfn>Verification Key</dfn>
           <dd>
-            [=Verification Key=], also often called public key, is used to
+            A [=Verification Key=], also often called a public key, is used to
             verify the signature of a piece of [=Signed Data=]. It is
             associated with a specific signer, which privately controls the
             [=Signing Key=], and is used to [=Verify=] the integrity of the
@@ -638,19 +653,20 @@
         <dt>
           <dfn>Web Media Profile</dfn>
           <dd>
-            A [=Web Media Profile=] is a set of [=Attributes=] about the
-            [=Originator=] who publishes contents via a website. It includes
-            domain-specific [=Attributes=] for the web media, such as
-            editorial policy, contact information, etc.
+            A [=Web Media Profile=] is a kind of [=Profile Annotation=], and
+            is a set of [=Validated Attributes=] about the [=Originator=] who
+            publishes contents via a website. It includes domain-specific
+            [=Validated Attributes=] for the web media, such as editorial
+            policy, contact information, etc.
           </dd>
         </dt>
 
         <dt>
           <dfn>Web Media Profile Issuer</dfn>
           <dd>
-            A [=Web Media Profile Issuer=] is an [=Entity=] that issues a [=Web
-            Media Profile=] for an [=Originator=] under [=Web Media Specific
-            Policy=]. The issuer is responsible for validating the
+            A [=Web Media Profile Issuer=] is an [=Entity=] that issues a
+            [=Web Media Profile=] for an [=Originator=] under [=Web Media
+            Specific Policy=]. The issuer is responsible for validating the
             [=Attributes=] included in the profile and ensuring that they
             accurately represent the [=Originator=].
           </dd>
@@ -667,11 +683,12 @@
         <dt>
           <dfn>Website Profile</dfn>
           <dd>
-            A [=Website Profile=] is a set of [=Attributes=] about a website
-            that is necessary for the securing mechanism of the [=Originator
-            Profile Framework=], issued by the [=Originator=] publishes
-            information via this website. This profile includes information
-            such as the website's valid domain.
+            A [=Website Profile=] is a set of [=Validated Attributes=] about a
+            website that is necessary for the securing mechanism of the
+            [=Originator Profile Framework=], issued by the [=Originator=]
+            that publishes information via the website identified by the
+            [=Website Profile=]. This profile includes information such as the
+            website's valid domain.
           </dd>
         </dt>
 
@@ -935,12 +952,13 @@
           <p>
             In [=Originator Profile Framework=], the information about the
             [=Originator=] that is to be verifiable is a [=Signed Data from
-            Originator=]; the signed data is issued by the [=Originator=] under a
-            specific policy to the [=Originator=]. The [=Originator=]'s information
-            are expressed as an [=Originator Profile=]. An [=Originator Profile=]
-            consists of a [=Core Profile=], which contains the
-            originator's verification key, and one or more [=Profile Annotations=]
-            that attach [=Validated Attributes=] to the [=Core Profile=].
+            Originator=]; the signed data is issued by the [=Originator=]
+            under a specific policy to the [=Originator=]. The
+            [=Originator=]'s information are expressed as an [=Originator
+            Profile=]. An [=Originator Profile=] consists of a [=Core
+            Profile=], which contains the [=Originator=]'s [=Verification
+            Key=], and one or more [=Profile Annotations=] that attach
+            [=Validated Attributes=] to the [=Core Profile=].
           </p>
           <figure id="architecture-issuing-op">
             <img src="Drawings/Architecture-Originator_Profile.drawio.svg"
@@ -1903,7 +1921,6 @@
           ecosystem.</li>
           </ul>
       </section>
-
 
     </section>
 
